@@ -4,22 +4,22 @@ const lightBulb3 = document.querySelector("#lightbulb3")
 let subtitle = document.querySelector('.subtitle')
 let count = 0
 
-lightBulb1.addEventListener("click", function(){
+lightBulb1.addEventListener("mouseover", function(){
     count++
-    lightBulb1.classList.toggle('active')
+    this.classList.toggle('active')
     subtitle.innerHTML = `You've clicked the lightbulbs ${count} times`
 })
 
-lightBulb2.addEventListener("click", function(){
+lightBulb2.addEventListener("mouseover", function(){
     count++
-    lightBulb2.classList.toggle('active')
+    this.classList.toggle('active')
     subtitle.innerHTML = `You've clicked the lightbulbs ${count} times`
 })
 
-lightBulb3.addEventListener("click", function(){
+lightBulb3.addEventListener("mouseover", function(){
     count++
     subtitle.innerHTML = `You've clicked the lightbulbs ${count} times`
-    lightBulb3.classList.toggle('active')
+    this.classList.toggle('active')
     
 })
 
